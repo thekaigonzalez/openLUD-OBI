@@ -16,13 +16,13 @@ void main() {
     INIT, 1, NULL, // initialize register 1
     INIT, 2, NULL, // initialize register 2
 
-    PUT, 1, 0x41, 7, NULL, // put 0x41 into register 1 at position 0
+    PUT, Reg(1), 0x41, 7, NULL, // put 0x41 into register 1 at position 0
 
-    EACH, 1, NULL, // print out each byte in register 1
+    EACH, Reg(1), NULL, // print out each byte in register 1
 
-    GET, 1, 7, 2, NULL, // get byte at position 7 from register 1 and put into register 2
+    GET, Reg(1), 7, Reg(2), NULL, // get byte at position 7 from register 1 and put into register 2
 
-    EACH, 2, NULL, // print out each byte in register 2 (should be 0x41)
+    EACH, Reg(2), NULL, // print out each byte in register 2 (should be 0x41)
 
     END // end
   ];

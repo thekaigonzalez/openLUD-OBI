@@ -11,3 +11,8 @@ tips:
     - when processing high amounts of data (larger than 256 bytes), it is good
     to utilize more than 1 register. the maximum amount of physical data OpenLUD
     can hold is 256^2 (or 65536 real bytes).
+
+your first openLUD file:
+
+    To make an OpenLUD program, without a compiler, you will need to use the D
+    API instead.

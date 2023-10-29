@@ -1,6 +1,6 @@
 /*Copyright 2019-2023 Kai D. Gonzalez*/
 
-module obirqlist;
+module obi.obirqlist;
 
 // contains a list of OBI requests
 
@@ -43,3 +43,8 @@ const byte GET = 46; // [ register ] [ position ] [ register ]
 const byte INIT = 100; // [ register number ]
 /** 43 */
 const byte END = 12; // ...
+
+byte Reg(int reg_num)
+{
+  return cast(byte)reg_num;
+}
