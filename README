@@ -1,0 +1,13 @@
+contains the openLUD Open Binary Interface (OBI) files
+
+    these are directly interfaced and ran natively, but are compiled into bytecode.
+    do note that this is NOT a programming language, nor is it a compiler. this
+    handles direct native execution of OBI files.
+
+    see the provided diagram for more details
+
+tips:
+    - make sure you are running the latest version of openLUD
+    - when processing high amounts of data (larger than 256 bytes), it is good
+    to utilize more than 1 register. the maximum amount of physical data OpenLUD
+    can hold is 256^2 (or 65536 real bytes).
